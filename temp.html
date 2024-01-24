@@ -1,0 +1,152 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pop-up Window Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        #popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            display: none;
+        }
+
+        #popup label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #popup input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        #popup button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="open-popup">Open Pop-up Window</button>
+    <div id="popup">
+        <label for="input-field">Enter your name:</label>
+        <input type="text" id="input-field">
+        <button id="submit">Submit</button>
+    </div>
+    <script>
+        var openPopupButton = document.getElementById("open-popup");
+        var popup = document.getElementById("popup");
+        var inputField = document.getElementById("input-field");
+        var submitButton = document.getElementById("submit");
+
+        openPopupButton.addEventListener("click", function () {
+            popup.style.display = "block";
+        });
+
+        submitButton.addEventListener("click", function () {
+            var inputValue = inputField.value;
+            alert("You entered: " + inputValue);
+            popup.style.display = "none";
+        });
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Font Awesome 5 Icons</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!--Get your own code at fontawesome.com-->
+</head>
+
+
+<body>
+
+    <h1>fas fa-user-friends</h1>
+
+    <i class='fas fa-user-friends'></i>
+    <i class='fas fa-user-friends' style='font-size:24px'></i>
+    <i class='fas fa-user-friends' style='font-size:36px'></i>
+    <i class='fas fa-user-friends' style='font-size:48px;color:red'></i>
+    <br>
+
+    <p>Used on a button:</p>
+    <button style='font-size:24px'>Button <i class='fas fa-user-friends'></i></button>
+
+    <p>Unicode:</p>
+    <i style='font-size:24px' class='fas'>&#xf500;</i>
+
+</body>
+
+</html>
+
+
+
+// Check connection
+if (!$con) {
+die("Connection failed: " . mysqli_connect_error());
+}
+
+// Perform CRUD operations based on user input
+$action = isset($_POST['action'])? $_POST['action']: '';
+$name=isset($_POST['name'])? $_POST['name']: '';
+$age=isset($_POST['age'])? $_POST['age']: '';
+$id=isset($_POST['id'])? $_POST['id']: '';
+
+// $name = $_POST['name'];
+// $age = $_POST['age'];
+// $id = $_POST['id'];
+
+switch($action) {
+case 'create':
+$sql = "INSERT INTO 'mydb',`mytable` (`id`, `name`, `age`) VALUES ('$id','$name', '$age')";
+
+if($con->query($sql) == True )
+{
+echo "New record created successfully";
+}
+else{
+echo "Error: $sql <br> $con->error";
+}
+break;

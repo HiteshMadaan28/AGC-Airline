@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>about us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-background: #4efb4e;
+            --secondary-border: rgb(228, 224, 224);
+            --secondary-bg: rgb(241, 245, 249);
+            --secondary_shadow: rgb(236, 234, 234);
+        }
+
+        .about_container {
+            width: auto;
+            height: auto;
+        }
+
+        .box-1 {
+            background-image: url('https://images.pexels.com/photos/587063/pexels-photo-587063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100vw;
+
+        }
+
+        .box-1 .heading_c {
+            color: white;
+            font-size: 62px;
+            padding: 12px 3px;
+            text-shadow: 2px 2px 4px #000;
+            font-weight: bold;
+        }
+
+        .box-1 p {
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .about_container .box-2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 55px 20px;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+
+        }
+
+        .about_container .box-2 .content {
+            height: auto;
+            width: 40vw;
+            background-color: var(--secondary-bg);
+            padding: 26px;
+            flex-basis: 42%;
+            box-shadow: 0px 0px 4px 5px rgb(236, 234, 234);
+
+        }
+
+        .box-2 .content h4 {
+            font-size: 33px;
+            color: #03033e;
+        }
+
+        .box-2 .content h1 {
+            font-size: 53px;
+            color: #03033e;
+            margin: 12px 0px;
+        }
+
+        .line {
+            border-bottom: 2px solid grey;
+            width: 200px;
+        }
+
+        .para1 {
+            padding: 20px 0px;
+        }
+
+        .para2 {
+            padding: 20px 0px;
+        }
+
+        .box-2 .img img {
+            width: 561px;
+            height: 377px;
+            border: 2px solid black;
+        }
+
+        .box-2 .img {
+            padding: 26px;
+            flex-basis: 42%;
+        }
+
+        .box-3 {
+            padding: 20px 0px;
+
+        }
+
+        .box-3 .words {
+            background: #7fc3ff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box-3 .words .div_para {
+            width: 60vw;
+            height: auto;
+        }
+
+        .box-3 .words .div_para .para {
+
+            font-size: 21px;
+            padding: 20px 0px;
+
+        }
+
+        .box-3 .words .div_img img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .box-3 .words .line2 {
+            border-top: 2px solid var(--primary-background);
+            width: 40px;
+            display: inline-block;
+            height: 9px;
+        }
+
+        .box-3 .words span {
+            padding: 0px 9px;
+            font-size: 20px;
+        }
+
+        .box-4 {
+            padding: 20px;
+            margin: 60px 0px 10px;
+        }
+
+        .box-4 .header_box_4 {
+            text-align: center;
+            padding: 20px 0px;
+        }
+
+        .box-4 .header_box_4 h4 {
+            font-size: 33px;
+        }
+
+        .box-4 .header_box_4 h1 {
+            font-size: 53px;
+
+        }
+
+        .box-4 .box_4_containers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .box-4 .icon_box {
+            padding: 10px;
+            border: 2px solid red;
+            background-color: #7fc3ff;
+        }
+
+        .box-4 .line3 {
+            border-bottom: 3px solid var(--primary-background);
+            width: 111px;
+            height: 9px;
+            margin: 21px 0px 0px;
+
+        }
+
+        .box-4 .line3_2 {
+            margin: 8px 0px 0px;
+        }
+
+        .box-4 .cell {
+            flex-basis: 24%;
+            margin: 0px 5px;
+            padding: 16px;
+            box-sizing: border-box;
+            z-index: 1;
+            position: relative;
+            height: 275px;
+            border: 3px solid var(--secondary-border);
+            background-color: var(--secondary-bg);
+        }
+
+        .icon::before {
+            content: "";
+            width: 85px;
+            height: 85px;
+            left: 139px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: var(--primary-background);
+            z-index: -1;
+            top: 3px;
+
+        }
+
+        .icon1::before {
+            left: 137px;
+            top: 11px;
+
+        }
+
+        .icon2::before {
+            left: 136px;
+            top: 14px;
+
+        }
+
+        .icon3::before {
+            left: 137px;
+            top: 9px;
+
+        }
+
+        .icon4::before {
+            left: 132px;
+            top: 10px;
+
+        }
+
+        .box-4 .cell .icon {
+            text-align: center;
+            margin: 10px 0px;
+            color: white;
+            /* position: relative; */
+        }
+
+        .box-4 .cell .icon1 {
+            font-size: 56px;
+        }
+
+        .box-4 .cell .icon2 {
+            font-size: 52px;
+        }
+
+        .box-4 .cell .icon3 {
+            font-size: 47px;
+        }
+
+        .box-4 .cell .icon4 {
+            font-size: 46px;
+        }
+
+        .box-4 .cell .cell_content {
+            margin: 18px 0px 0px 0px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .cell .cell_content h5 {
+            font-size: 20px;
+            padding: 7px 0px;
+        }
+
+        .cell .cell_content .cell_para2 {
+            font-size: 16px;
+            padding: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="outter_nav">
+            <div id="hamburger_">
+                <i id="bar" class="fa fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjelB5kNNaqeJMwez_YlQg7eHFHSZbV62CSVofW6AV5IsujOZrp13JLZ17EwePc84EQcc1JgqzsGduOcqg4DDTT9WEXGeIrtORraLYqOmGzSBIaVDwBf5sBV88a63I_MOxaCQm74mKXwHr3u2OHJlIadUL-JnQCcHGchWCKMmpqLqjcQs9Ezavn6Xln"
+                    alt="Logo Not available" width="200px" height="60px" />
+            </div>
+        </nav>
+        <nav class="nav">
+
+            <div class="logo">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjelB5kNNaqeJMwez_YlQg7eHFHSZbV62CSVofW6AV5IsujOZrp13JLZ17EwePc84EQcc1JgqzsGduOcqg4DDTT9WEXGeIrtORraLYqOmGzSBIaVDwBf5sBV88a63I_MOxaCQm74mKXwHr3u2OHJlIadUL-JnQCcHGchWCKMmpqLqjcQs9Ezavn6Xln"
+                    alt="Logo Not available" width="200px" height="60px" />
+            </div>
+            <div class="options-div">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li id="pages"><a href="#">Pages
+                            <span class="angle-down">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                            <div id="pages_div" class="drop-down-options">
+                                <a href="#">Page 1</a>
+                                <a href="#">Page 2</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <li id="login_id"><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Register</a></li>
+                </ul>
+                <!-- <div class="icon"><a href="#">
+                        <div id="icon" class="icon"><i class="fa fa-search"></i></div>
+                    </a></div> -->
+            </div>
+        </nav>
+    </header>
+
+    <div class="about_container">
+        <div class="box-1">
+            <p>About Us</p>
+            <h1 class="heading_c">OVERVIEW</h1>
+        </div>
+        <div class="box-2">
+            <div class="content">
+                <h4>Our History</h4>
+                <h1>A Few Words About Us</h1>
+                <p class="line"></p>
+                <p class="para1">Cheapflights is the world s first inspirational travel search service that focuses on
+                    what s really
+                    important: your Interests and your Budget!</p>
+                <p class="para2">How practical is an amazing weekend break for skiing if what you really look forward is
+                    relaxing on a sandy beach? How good a great destination can be, if it’s too expensive to get there?
+                    Cheapflights offers an innovative and useful online experience, so you can find your perfect
+                    destination in just a couple of clicks!</p>
+            </div>
+            <div class="img"><img src="img/aboutimg.jpg" alt="img"></div>
+        </div>
+
+        <div class="box-3">
+            <div class="words">
+                <div class="div_img">
+                    <img src="https://images.pexels.com/photos/1262304/pexels-photo-1262304.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="img">
+                </div>
+                <div class="div_para">
+                    <p class="para">Cheapflights was designed to help people discover new places, get to know new
+                        people,
+                        and just to enjoy traveling. Our booking system helps modern travelers easily book new tickets
+                        without any unnecessary queues and waiting. You just need to make a couple of clicks and you’re
+                        ready to go!</p>
+                    <p class="line2"></p><span>Founder's Word</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-4">
+            <div class="header_box_4">
+                <h4>Why People Choose Us</h4>
+                <h1>Our Advantages</h1>
+            </div>
+            <div class="box_4_containers">
+                <div class="cell ">
+
+                    <div class="icon icon1">
+                        <i class="fa fa-plane"></i>
+                    </div>
+                    <div class="cell_content">
+                        <h5>The Most Reliable
+                            Airlines</h5>
+                        <p class="line3">
+                        </p>
+                        <p class="cell_para2">We cooperate only with the most reliable airlines who can boast the
+                            perfect reputation.</p>
+                    </div>
+
+                </div>
+                <div class="cell ">
+
+                    <div class="icon icon2">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="cell_content">
+                        <h5>More Than 7M Visitors
+                            Each Month</h5>
+                        <p class="line3 line3_2">
+                        </p>
+                        <p class="cell_para2">More than 7 million people use our services to find and book airline
+                            tickets..</p>
+
+                    </div>
+                </div>
+                <div class="cell ">
+
+                    <div class="icon icon3">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="cell_content">
+                        <h5>User-Friendly
+                            Search System</h5>
+                        <p class="line3">
+                        </p>
+                        <p class="cell_para2">Convenient and fast search for airline tickets, hotels and cars.</p>
+
+                    </div>
+                </div>
+                <div class="cell ">
+
+                    <div class="icon icon4">
+                        <i class="fa fa-calendar-check-o"></i>
+                    </div>
+                    <div class="cell_content">
+                        <h5>Fast and Reliable
+                            Ticket Booking</h5>
+                        <p class="line3">
+                        </p>
+                        <p class="cell_para2">We provide reliable ticket booking system, which is also perfect for
+                            first-time travellers.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Airline Reservation System</h3>
+                <p>Website for the reservation of flights by the students of AGC</p>
+            </div>
+            <div class="footer-middle">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>123 Main Street</li>
+                    <li>Amritsar,12345</li>
+                    <li>Email: info@agcairline.com</li>
+                    <li>Phone: 123-456-7890</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel FLight</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/cancel_flight.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="outter_nav">
+            <div id="hamburger_">
+                <i id="bar" class="fa fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjelB5kNNaqeJMwez_YlQg7eHFHSZbV62CSVofW6AV5IsujOZrp13JLZ17EwePc84EQcc1JgqzsGduOcqg4DDTT9WEXGeIrtORraLYqOmGzSBIaVDwBf5sBV88a63I_MOxaCQm74mKXwHr3u2OHJlIadUL-JnQCcHGchWCKMmpqLqjcQs9Ezavn6Xln"
+                    alt="Logo Not available" width="200px" height="60px" />
+            </div>
+        </nav>
+        <nav class="nav">
+
+            <div class="logo">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjelB5kNNaqeJMwez_YlQg7eHFHSZbV62CSVofW6AV5IsujOZrp13JLZ17EwePc84EQcc1JgqzsGduOcqg4DDTT9WEXGeIrtORraLYqOmGzSBIaVDwBf5sBV88a63I_MOxaCQm74mKXwHr3u2OHJlIadUL-JnQCcHGchWCKMmpqLqjcQs9Ezavn6Xln"
+                    alt="Logo Not available" width="200px" height="60px" />
+            </div>
+            <div class="options-div">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li id="pages"><a href="#">Pages
+                            <span class="angle-down">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                            <div id="pages_div" class="drop-down-options">
+                                <a href="#">Page 1</a>
+                                <a href="#">Page 2</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <li id="login_id"><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Register</a></li>
+                </ul>
+                <!-- <div class="icon"><a href="#">
+                        <div id="icon" class="icon"><i class="fa fa-search"></i></div>
+                    </a></div> -->
+            </div>
+        </nav>
+    </header>
+
+    <div class="cancel_container">
+
+        <div class="cancel_inner_container">
+            <div class="heading">
+                <h1>Cancel Your Flight Tickets</h1>
+            </div>
+        </div>
+        <div class="form_sts">
+            <div class="status_box">
+                <h5>CANCEL</h5>
+            </div>
+            <div class="form_box">
+                <form action="cancel_tickets.php" method="post">
+
+                    <div class="id_name">
+                        <div class="booking_id">
+                            <label for="booking_id">Booking ID:</label>
+                            <input type="text" id="booking_id" name="booking_id" required>
+                        </div>
+                        <div class="name">
+                            <label for="passenger_name">Passenger Name:</label>
+                            <input type="text" id="passenger_name" name="passenger_name" required>
+                        </div>
+                    </div>
+                    <div class="number_dept">
+                        <div class="flight_no">
+                            <label for="flight_number">Flight Number:</label>
+                            <input type="text" id="flight_number" name="flight_number" required>
+                        </div>
+                        <div class="dept_">
+                            <label for="departure_date">Departure Date:</label>
+                            <input type="date" id="departure_date" name="departure_date" required>
+                        </div>
+                    </div>
+                    <div class="reason_box">
+                        <label for="reason">Reason for cancellation:</label>
+                        <textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Airline Reservation System</h3>
+                <p>Website for the reservation of flights by the students of AGC</p>
+            </div>
+            <div class="footer-middle">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>123 Main Street</li>
+                    <li>Amritsar,12345</li>
+                    <li>Email: info@agcairline.com</li>
+                    <li>Phone: 123-456-7890</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="login_style.css">
+    <link rel="stylesheet" href="signup_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="box">
+            <div id="login_div">
+                <h1 id="signup">Sign Up</h1>
+                <a href="home.html" target="_self">
+                    <div id="cross" class="cross"><i class="fa fa-close"></i></div>
+                </a>
+            </div>
+
+            <form action="" class="form" id="myform" onsubmit="return valid_form()" method="POST" action="signup.php">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="Email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="Phone_Number">Phone Number</label>
+                <input type="number" id="Phone_Number" name="phonenumber" maxlength="10">
+                <label type="password" for="password">Password</label>
+                <input type="password" name="password" id="password" required maxlength="6">
+                <label type="password" for="con_password">Confirm Password</label>
+                <input type="password" name="con_passcode" id="con_password" required>
+                <input type="submit" value="Submit" class="bttn">
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+
+    function valid_form() {
+        let username = document.forms["myform"]["Username"].value;
+        let name = document.forms["myform"]["Name"].value;
+        let mail = document.forms["myform"]["Email"].value;
+        let num = document.forms["myform"]["Phone_Number"].value;
+        let password = document.forms["myform"]["password"].value;
+        let con_pass = document.forms["myform"]["con_passcode"].value;
+        if (username === "" && name === "" && mail === "" && num === "" && password === "" && con_pass === "") {
+            alert("Form must be filled.");
+            return false;
+
+        }
+        if (password != con_pass) {
+            alert("Confirm Password must be same as password.");
+            return false;
+        }
+        else {
+            alert("Form submitted successfully..");
+            return true;
+        }
+
+
+    }
+
+</script>
+<!-- <script src="singup_jv.js"></script> -->
+
+</html>

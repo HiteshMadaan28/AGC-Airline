@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Airline Reservation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/section-a.css">
+    <!-- <link rel="stylesheet" href="sectionc.css"> -->
+    <!-- <link rel="stylesheet" href="tempform_css.css"> -->
+    <!-- <link rel="stylesheet" href="sectionb.css"> -->
+</head>
+
+<body>
+    <header class="header">
+        <nav class="outter_nav">
+            <div id="hamburger_">
+                <i id="bar" class="fa fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjelB5kNNaqeJMwez_YlQg7eHFHSZbV62CSVofW6AV5IsujOZrp13JLZ17EwePc84EQcc1JgqzsGduOcqg4DDTT9WEXGeIrtORraLYqOmGzSBIaVDwBf5sBV88a63I_MOxaCQm74mKXwHr3u2OHJlIadUL-JnQCcHGchWCKMmpqLqjcQs9Ezavn6Xln"
+                    alt="Logo Not available" width="200px" height="60px" />
+            </div>
+        </nav>
+        <nav class="nav">
+
+            <div class="logo">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjelB5kNNaqeJMwez_YlQg7eHFHSZbV62CSVofW6AV5IsujOZrp13JLZ17EwePc84EQcc1JgqzsGduOcqg4DDTT9WEXGeIrtORraLYqOmGzSBIaVDwBf5sBV88a63I_MOxaCQm74mKXwHr3u2OHJlIadUL-JnQCcHGchWCKMmpqLqjcQs9Ezavn6Xln"
+                    alt="Logo Not available" width="200px" height="60px" />
+            </div>
+            <div class="options-div">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about_us.html">About</a></li>
+                    <li id="pages"><a href="#">Services
+                            <span class="angle-down">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                            <div id="pages_div" class="drop-down-options">
+                                <a href="update.html">Update</a>
+                                <a href="cancel_flight.html">Cancel</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <li id="login_id"><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Register</a></li>
+                </ul>
+                <!-- <div class="icon"><a href="#">
+                        <div id="icon" class="icon"><i class="fa fa-search"></i></div>
+                    </a></div> -->
+            </div>
+        </nav>
+    </header>
+    <section class="section-a">
+        <div class="container">
+            <div class="textcontainer">
+                <h1>The Sky is Waiting for You</h1>
+                <p>With CheapFlights, you can easily book any ticket you need to travel safely thanks to our detailed
+                    system of searching and booking airline tickets.</p>
+                <a href="#"><span>READ ME</span></a>
+            </div>
+            <div class="formcontainer">
+                <div class="form_cont">
+                    <div class="subheading">
+                        <h2><i class="fa fa-plane"></i>Flights</h2>
+                    </div>
+                    <div class="form_div">
+                        <form action="" class="form">
+                            <div class="radiobtn">
+                                <div class="round_trip">
+                                    <input type="radio" name="flightway" id="RoundTrip">
+                                    <label for="RoundTrip">Round Trip</label>
+                                </div>
+                                <div class="one_way">
+                                    <input type="radio" name="flightway" id="Oneway">
+                                    <label for="Oneway">One Way</label>
+                                </div>
+                                <div class="multicity">
+                                    <input type="radio" name="flightway" id="Mulitcity">
+                                    <label for="Multicity">Multicity</label>
+                                </div>
+                            </div>
+                            <div class="fromto">
+                                <div class="from">
+                                    <label for="from">From</label>
+                                    <input type="text" id="from" name="from"><br>
+                                    <div class="from_n">
+                                        <input type="checkbox" id="nearby1" name="Nearby1">
+                                        <label for="nearby1" class="not_grid_label" id="n1">
+                                            Add Nearby Airports </label>
+                                    </div>
+                                </div>
+                                <div class="to">
+                                    <label for="to">TO</label>
+                                    <input type="text" id="to" name="to"><br>
+                                    <div class="to_n">
+                                        <input type="checkbox" id="nearby2" name="Nearby2">
+                                        <label for="nearby2" id="n2">Add Nearby Airports </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="deptreturn">
+                                <div class="dept">
+                                    <label for="departure">Departure</label>
+                                    <input type="date" id="departure" name="departure">
+                                </div>
+                                <div class="return">
+                                    <label for="return">Return</label>
+                                    <input type="date" id="return" name="return" placeholder="">
+                                </div>
+                            </div>
+                            <div class="cabin_adult">
+                                <div class="cabin">
+                                    <label for="cabin_">Cabin Class</label>
+                                    <select for="cabin">
+                                        <option id="cabin">Option1</option>
+                                        <option id="cabin">option2</option>
+                                        <option id="cabin">option3</option>
+                                    </select>
+                                </div>
+                                <div class="adcabin">
+                                    <div class="ad">
+                                        <label for="adult">Adults</label>
+                                        <input type="number" id="adult">
+                                    </div>
+                                    <div class="cabincls">
+                                        <label for="cabin_class">Cabin Class</label>
+                                        <input type="number" name="cabin" id="cabin_class">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bttn_div">
+                                <input type="submit" value="SUBMIT" id="submit_bttn">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-b">
+        <div class="container_sec_b">
+            <div class="box_section_b">
+                <div class="div-1 div_b">
+                    <div class="icon"><i class="fa fa-search"></i></div>
+                    <div class="div1_content">
+                        <h5 class="sub_heading2">The World's Travel Search Engine</h5>
+                        <p class="para2">
+                            You can use our search engine to find any flight you want and select a desired destination
+                            and
+                            price</p>
+                    </div>
+                </div>
+                <div class="div-2 div_b">
+                    <div class="icon">
+                        <i class="fa fa-plane"></i>
+                    </div>
+                    <div class="div2_content">
+                        <h5 class="sub_heading2">Cheap and Beneficial Air Tickets</h5>
+                        <p class="para2">
+                            We provide affordable tickets to the flights of almost all existing airlines so you don’t
+                            need
+                            to look for them.
+                        </p>
+                    </div>
+                </div>
+                <div class="div-3 div_b">
+                    <div class="icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="div3_content">
+                        <h5 class="sub_heading2">Our Support Lines are Open 24/7</h5>
+                        <p class="para2">
+                            Our 24/7 support operators are always ready to help you select a proper flight according to
+                            your
+                            needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="div-4 div_b">
+                    <div class="icon">
+                        <i class="fa fa-credit-card"></i>
+                    </div>
+                    <div class="div4_content">
+                        <h5 class="sub_heading2">Convenient Payment Method For You</h5>
+                        <p class="para2">
+                            We provide a variety of payment methods including cheque, cash, and credit cards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section_c">
+        <div class="container_sec_c">
+            <div class="inner_container">
+                <div class="section_c_box marquee ">
+                    <div class="box_div " id="box1">
+                        <div class=" img_div div-1_c">
+                            <img src="img/emirate_logo.jpg">
+                        </div>
+                        <div class=" img_div div-1_c">
+                            <img src="img/airfrance_logo.jpg">
+                        </div>
+                        <div class=" img_div div-1_c">
+                            <img src="img/british_airways_logo.jpg">
+                        </div>
+                        <div class=" img_div div-1_c">
+                            <img src="img/qatar_airways_logo.jpg">
+                        </div>
+                        <div class=" img_div div-1_c">
+                            <img src="img/singapore airlines_logo.jpg">
+                        </div>
+                        <div class=" img_div div-1_c">
+                            <img src="img/Turkish airlines_logo.jpg">
+                        </div>
+                    </div>
+                    <div class="box_div" id="box2">
+                        <div class=" img_div div-1_c">
+                            <img src="img/emirate_logo.jpg">
+                        </div>
+                        <div class=" img_div div-1_c">
+                            <img src="img/airfrance_logo.jpg">
+                        </div>
+                        <div class=" img_div div-1_c">
+                            <img src="img/british_airways_logo.jpg">
+                        </div>
+                        <div class=" img_div div-1_c">
+                            <img src="img/qatar_airways_logo.jpg">
+                        </div>
+                        <div class=" img_div div-1_c">
+                            <img src="img/singapore airlines_logo.jpg">
+                        </div>
+                        <div class=" img_div div-1_c">
+                            <img src="img/Turkish airlines_logo.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Airline Reservation System</h3>
+                <p>Website for the reservation of flights by the students of AGC</p>
+            </div>
+            <div class="footer-middle">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>123 Main Street</li>
+                    <li>Amritsar,12345</li>
+                    <li>Email: info@agcairline.com</li>
+                    <li>Phone: 123-456-7890</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+
+    // Display menu options on phone size window
+    let menu = document.getElementById("hamburger_");
+    menu.addEventListener('click', () => {
+        if (document.querySelector(".nav").style.display === "block") {
+            document.querySelector(".nav").style.display = "none";
+            document.getElementById("bar").classList.remove("fa-arrow-left");
+            document.getElementById("bar").classList.add("fa-bars");
+        }
+        else {
+            document.querySelector(".nav").style.display = "block";
+            document.getElementById("bar").classList.remove("fa-bars");
+            document.getElementById("bar").classList.add("fa-arrow-left");
+        }
+    })
+
+    // Nav--> page click action
+    let pg_op = document.getElementById("pages_div");
+    document.getElementById('pages').addEventListener('click', function () {
+        if (pg_op.style.display === "flex") {
+            pg_op.style.display = "none";
+        }
+        else {
+            pg_op.style.display = "flex";
+        }
+    })
+
+    // Login--->window
+
+
+
+    $(document).ready(function () {
+        $('form').submit(function (event) {
+            event.preventDefault(); // prevent the default form submission behavior
+
+            // serialize the form data
+            var formData = $(this).serialize();
+
+            // send the AJAX request
+            $.ajax({
+                type: 'POST',
+                url: 'submit_form.php', // replace with the URL where the form data will be processed
+                data: formData,
+                success: function (response) {
+                    // handle the server response here
+                    console.log(response);
+                },
+                error: function (xhr, status, error) {
+                    // handle any errors here
+                    console.log(error);
+                }
+            });
+        });
+    });
+
+
+</script>
+
+</html>

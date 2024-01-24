@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --secondary-border: rgb(228, 224, 224);
+    --secondary-bg: rgb(241, 245, 249);
+    --secondary_shadow: rgb(236, 234, 234);
+    --primary-bg: rgba(3, 3, 52, 0.96);
+}
+
+.update_container {
+    width: 100vw;
+    height: auto;
+}
+
+.update_inner_container {
+    border: 2px solid black;
+    height: 27vh;
+    background-color: var(--primary-bg);
+}
+
+.update_inner_container .heading {
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    padding: 20px;
+    text-shadow: 1px px 4px white;
+}
+
+.update_container .form_sts {
+
+    height: auto;
+    width: 100vw;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-bottom: 120px; */
+    position: relative;
+    padding-bottom: 120px;
+
+}
+
+.update_container .form_sts .status_box {
+    padding: 11px;
+    width: 65%;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    top: -67px;
+    height: 63px;
+    font-size: 24px;
+    box-shadow: 0px 0px 5px 3px #ddd;
+}
+
+.update_container .form_sts .form_box {
+    width: 65%;
+    box-shadow: 0px 0px 5px 3px #ddd;
+
+}
+
+.update_select {
+    display: flex;
+    align-items: center;
+    padding: 20px 1px;
+}
+
+.update_select select {
+    border: 2px solid black;
+    line-height: 1.5;
+    padding: 3px;
+    width: 250px;
+    margin-left: 100px;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    padding: 20px 1px;
+    display: none;
+}
+
+#flight_time_form .items {
+    display: block;
+}
+
+
+.items input[type="text"],
+.items input[type="date"],
+input[type="time"] {
+    margin-left: 100px;
+}
+
+input[type="time"] {
+    border: 2px solid black;
+    line-height: 1.5;
+    padding: 3px;
+    width: 250px;
+}
+
+.bttn {
+    padding: 10px 20px;
+    border: 2px solid var(--secondary-border);
+    border-radius: 5px;
+    background-color: var(--primary-bg);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 100px;
+}
+
+.bttn:hover {
+    border: 2px solid whitesmoke;
+    background-color: rgba(4, 4, 63, 0.96);
+}

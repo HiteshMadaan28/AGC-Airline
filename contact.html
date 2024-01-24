@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="contact.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .box {
+            background-image: url('https://images.pexels.com/photos/587063/pexels-photo-587063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .box .heading_c {
+            color: white;
+            font-size: 62px;
+            padding: 12px 3px;
+            text-shadow: 2px 2px 4px #000;
+            font-weight: bold;
+        }
+
+        .box p {
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .box-2 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: auto;
+            width: 100vw;
+            background-color: #f4eeee;
+            padding: 85px 10px;
+            box-sizing: border-box;
+        }
+
+        .form_div {
+            height: auto;
+            width: 40vw;
+            background-color: #e4ecf4;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 632px;
+
+        }
+
+        .content h1 {
+            font-size: 60px;
+            color: black;
+            padding: 8px 9px;
+        }
+
+        .content .line {
+            border-bottom: 2px solid red;
+            width: 200px;
+        }
+
+        .content .ctnt {
+            text-align: left;
+            padding: 12px 0px;
+        }
+
+        .form_div .form_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .form_container .inner_form_div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .inner_form_div .label {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 48%;
+            padding: 12px 32px;
+        }
+
+        .inner_form_div .label input {
+            width: auto;
+            height: 30px;
+            border: 2px solid black;
+        }
+
+        .inner_form_div .label label {
+            font-size: 16px;
+            font-weight: bold;
+            display: inline;
+            margin: 6px 4px;
+        }
+
+        .inner_form_div .msg textarea {
+            width: auto;
+            border: 2px solid black;
+        }
+
+        .box-2 .contact_div {
+            width: 28vw;
+            height: auto;
+            padding: 30px 60px;
+            height: 539px;
+            box-sizing: border-box;
+            background-color: #e4ecf4;
+        }
+
+        /* .contact_div .phone_div {}
+
+.contact_div .email_div {}
+
+.contact_div .opnhr_div {} */
+
+        .contact_div .h3 {
+            font-size: 30px;
+            color: #03032e;
+            padding-bottom: 10px;
+
+        }
+
+        .contact_div .phone_div .cntn,
+        .contact_div .email_div .cntn,
+        .contact_div .opnhr_div .cntn,
+        .contact_div .address .cntn {
+            display: flex;
+            align-items: center;
+            padding: 14px 0px;
+        }
+
+
+        .contact_div .line2 {
+            border-bottom: 2px solid yellowgreen;
+            width: 200px;
+        }
+
+        .contact_div .cntn .icon {
+            font-size: 41px;
+            box-sizing: border-box;
+            color: #e8d52b;
+            padding: 0px 53px 0px 6px;
+        }
+
+        .button {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        .bttn {
+            padding: 5px;
+            font-weight: bold;
+            background-color: #e8d52b;
+            border-radius: 14px;
+            color: #fff;
+            font-size: 25px;
+            ;
+        }
+
+        /* footer-->contact.html */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px;
+        }
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .footer-left h3,
+        .footer-middle h3,
+        .footer-right h3 {
+            margin-bottom: 20px;
+        }
+
+        .footer-left p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .footer-middle ul,
+        .footer-right ul {
+
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-middle ul li,
+        .footer-right ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-middle ul li a,
+        .footer-right ul li {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer-middle ul li a:hover,
+        .footer-right ul li:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="outter_nav">
+            <div id="hamburger_">
+                <i id="bar" class="fa fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjelB5kNNaqeJMwez_YlQg7eHFHSZbV62CSVofW6AV5IsujOZrp13JLZ17EwePc84EQcc1JgqzsGduOcqg4DDTT9WEXGeIrtORraLYqOmGzSBIaVDwBf5sBV88a63I_MOxaCQm74mKXwHr3u2OHJlIadUL-JnQCcHGchWCKMmpqLqjcQs9Ezavn6Xln"
+                    alt="Logo Not available" width="200px" height="60px" />
+            </div>
+        </nav>
+        <nav class="nav">
+
+            <div class="logo">
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjelB5kNNaqeJMwez_YlQg7eHFHSZbV62CSVofW6AV5IsujOZrp13JLZ17EwePc84EQcc1JgqzsGduOcqg4DDTT9WEXGeIrtORraLYqOmGzSBIaVDwBf5sBV88a63I_MOxaCQm74mKXwHr3u2OHJlIadUL-JnQCcHGchWCKMmpqLqjcQs9Ezavn6Xln"
+                    alt="Logo Not available" width="200px" height="60px" />
+            </div>
+            <div class="options-div">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li id="pages"><a href="#">Pages
+                            <span class="angle-down">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                            <div id="pages_div" class="drop-down-options">
+                                <a href="#">Page 1</a>
+                                <a href="#">Page 2</a>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <li id="login_id"><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Register</a></li>
+                </ul>
+                <!-- <div class="icon"><a href="#">
+                        <div id="icon" class="icon"><i class="fa fa-search"></i></div>
+                    </a></div> -->
+            </div>
+        </nav>
+    </header>
+    <div class="contact_container">
+        <div class="box">
+            <p>Contact or visit us</p>
+            <h1 class="heading_c">CONTACT</h1>
+        </div>
+        <div class="box-2">
+            <div class="form_div">
+                <div class="content">
+                    <h1>Get in Touch</h1>
+                    <p class="line"></p>
+                    <p class="ctnt">
+                        You can contact us any way that is convenient for you. We are available 24/7 via fax or email.
+                        You can also use a quick contact form below or visit our office personally. We would be happy to
+                        answer your questions.
+                    </p>
+                </div>
+                <div class="form_container">
+
+                    <div class="inner_form_div">
+                        <div class="label">
+                            <label for="fname">First Name</label>
+                            <input type="text" name="fname" id="fname">
+                        </div>
+                        <div class="label">
+                            <label for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname">
+                        </div>
+                    </div>
+                    <div class="inner_form_div">
+                        <div class="label">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="label">
+                            <label for="number">Number</label>
+                            <input type="number" name="number" id="number" maxlength="10">
+                        </div>
+                    </div>
+                    <div class="inner_form_div">
+                        <div class="label msg">
+                            <label for="msg">Message</label>
+                            <textarea id="message" name="msg" rows="6" cols="50"></textarea>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="bttn">Submit</button>
+                </div>
+
+            </div>
+            <div class="contact_div">
+                <div class="phone_div">
+                    <h3 class="h3">Phone</h3>
+                    <p class="line2"></p>
+                    <div class=" cntn">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <div class="no">
+
+                            1-800-1234-567<br>
+                            1-800-9876-543
+                        </div>
+                    </div>
+                </div>
+                <div class="email_div">
+                    <h3 class="h3">Email</h3>
+                    <p class="line2"></p>
+                    <div class="cntn">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <div class="mail">
+                            info@demolink.org
+                        </div>
+                    </div>
+                </div>
+                <div class="address">
+                    <h3 class="h3">Email</h3>
+                    <p class="line2"></p>
+                    <div class="cntn">
+                        <div class="icon"><i class="fa fa-map-marker"></i></i></i></div>
+                        <div class="addr">
+                            2130 Fulton Street, San Diego, CA 94117-1080 USA
+                        </div>
+                    </div>
+                </div>
+                <div class="opnhr_div">
+                    <h3 class="h3">Opening hours</h3>
+                    <p class="line2"></p>
+                    <div class="cntn">
+                        <div class="icon"><i class="fa fa-clock-o"></i></div>
+                        <div class="hours">
+                            Mon–Fri 8:00am–6:00pm<br>
+                            Sat 10:00am–4:00pm<br>
+                            Sun Closed
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Airline Reservation System</h3>
+                <p>Website for the reservation of flights by the students of AGC</p>
+            </div>
+            <div class="footer-middle">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>123 Main Street</li>
+                    <li>Amritsar,12345</li>
+                    <li>Email: info@agcairline.com</li>
+                    <li>Phone: 123-456-7890</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --secondary-border: rgb(228, 224, 224);
+    --secondary-bg: rgb(241, 245, 249);
+    --secondary_shadow: rgb(236, 234, 234);
+    --primary-bg: rgba(3, 3, 52, 0.96);
+}
+
+.cancel_contianer {
+    width: 100vw;
+    height: auto;
+}
+
+.cancel_inner_container {
+    border: 2px solid black;
+    height: 27vh;
+    background-color: var(--primary-bg);
+}
+
+.cancel_inner_container .heading {
+    color: white;
+    text-align: center;
+    font-size: 21px;
+    padding: 20px;
+    text-shadow: 1px px 4px white;
+}
+
+.cancel_container .form_sts {
+
+    height: auto;
+    width: 100vw;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin-bottom: 120px; */
+    position: relative;
+    padding-bottom: 120px;
+
+}
+
+.cancel_container .form_sts .status_box {
+    padding: 11px;
+    width: 65%;
+    background-color: white;
+    position: absolute;
+    z-index: 4;
+    top: -67px;
+    height: 63px;
+    font-size: 24px;
+    box-shadow: 0px 0px 5px 3px #ddd;
+}
+
+.cancel_container .form_sts .form_box {
+    width: 65%;
+    box-shadow: 0px 0px 5px 3px #ddd;
+
+}
+
+form {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+.id_name,
+.number_dept {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 20px 1px;
+}
+
+.id_name .booking_id,
+.id_name .name,
+.number_dept .flight_no,
+.number_dept .dept_ {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 48%;
+}
+
+form label {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"] {
+    border: 2px solid black;
+    line-height: 1.5;
+    padding: 3px;
+    width: 250px;
+}
+
+.reason_box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 1px;
+}
+
+.reason_box label {
+    padding: 5px 0px;
+}
+
+textarea {
+    resize: none;
+    border: 2px solid black;
+    line-height: 1.5;
+    padding: 3px;
+    width: 450px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-bg);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: rgba(4, 4, 63, 0.96);
+}

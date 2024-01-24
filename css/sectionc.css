@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.temp {
+    width: auto;
+    height: auto;
+    background-color: aquamarine;
+}
+
+.container_sec_c {
+    height: 400px;
+    position: relative;
+    background-color: white;
+    border: 5px solid rgb(69, 196, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* height: 54.71vh; */
+}
+
+.inner_container {
+
+    /* height: 29vh; */
+    height: 200px;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+
+}
+
+.section_c_box {
+    display: flex;
+    background-color: white;
+    /* width: calc(250px * 14); */
+
+    box-sizing: border-box;
+    padding: 15px 0px;
+    overflow: hidden;
+    width: 250%;
+    height: 400px;
+    /* height: 54.71vh; */
+
+}
+
+.marquee {
+    position: absolute;
+    left: 0;
+    animation-name: Animi;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 250%;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 220px;
+    /* height: 27.35vh; */
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes Animi {
+    0% {
+
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+.box_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+.box_div .img_div {
+    border: 2px solid red;
+    box-shadow: 0px 0px 9px 8px rgba(179, 171, 171, 0.82);
+    /* margin: 0 30px; */
+}
+
+.img_div img {
+
+    width: 250px;
+    height: 200px;
+}
+
+.img_div:hover {
+    border: 2px solid white;
+
+}
+
+/* For screens smaller than 600px */
+/* @media (max-width: 600px) {
+    .section_c_box {
+        width: 500%;
+    }
+
+    .marquee {
+        height: 150px;
+        height: 20.58vh;
+    }
+
+    .img_div img {
+        width: 150px;
+        width: 9.76vw;
+        height: 120px;
+        height: 16.41vh;
+    }
+}
+
+/* For screens larger than 600px */
+/* @media (min-width: 601px) {
+    .section_c_box {
+        width: 250%;
+    }
+
+    .marquee {
+        height: 29vh;
+    }
+
+    .img_div img {
+        width: 250px;
+        width: 16.27vw;
+        ;
+        height: 200px;
+        height: 27.35vh;
+    }
+} */

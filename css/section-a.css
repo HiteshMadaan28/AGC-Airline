@@ -1,0 +1,595 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* text container */
+.section-a::before {
+    content: "";
+    position: absolute;
+    background: url('https://bit.ly/3zOEh5j') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.9;
+}
+
+.section-a .container {
+    width: 97vw;
+    height: 87vh;
+    display: inline-flex;
+}
+
+.section-a .container .textcontainer {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 49.901vw;
+    height: 87vh;
+    color: white;
+    text-shadow: 1px 1px 0px rgba(95, 109, 226, 0.6);
+    font-weight: bold;
+    padding: 18px;
+    box-sizing: border-box;
+}
+
+
+.section-a .container .textcontainer h1 {
+    font-size: 70px;
+}
+
+.section-a .container .textcontainer p {
+    font-size: 26px;
+}
+
+
+.section-a .container .textcontainer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section-a .container .textcontainer a span {
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: #414040e6;
+}
+
+.section-a .container .textcontainer a span:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* form container */
+.formcontainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 49vw;
+    height: 87vh;
+}
+
+.form_cont {
+    height: auto;
+    width: auto;
+    /* background-color: #3498db; */
+    box-sizing: border-box;
+    padding: 35px;
+    opacity: 0.3px;
+    background: rgba(182, 184, 186, 0.3);
+    overflow: hidden;
+    border-radius: 30px;
+
+}
+
+.subheading h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.formcontainer .form_cont .form_div {
+    display: flex;
+    width: auto;
+}
+
+.form_div .form {
+
+    width: 100%;
+}
+
+.form label {
+
+    margin: 4px 0px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.form_div .form .fromto {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+}
+
+.fromto .from {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    flex-basis: 48%;
+}
+
+.fromto .to {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    flex-basis: 48%;
+}
+
+.from .from_n,
+.to .to_n {
+    margin: 0px 0px 26px 0px;
+}
+
+.form input[type="text"],
+.form input[type="date"],
+.form select {
+    border: 2px solid black;
+    height: 28px;
+    width: auto;
+    margin: 5px 5px 20px 5px;
+}
+
+.form input[type="number"] {
+    border: 2px solid black;
+    height: 28px;
+    width: 78px;
+    margin: 5px 5px 20px 5px
+}
+
+.form .deptreturn .dept {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    flex-basis: 48%;
+
+}
+
+.form .deptreturn .return {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    flex-basis: 48%;
+}
+
+.form .deptreturn {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+}
+
+.form .cabin_adult {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+
+}
+
+.form .cabin_adult .cabin {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+}
+
+.form .cabin_adult .adcabin {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    flex-basis: 48%;
+}
+
+.adcabin .ad {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+}
+
+.adcabin .cabincls {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+}
+
+
+.formcontainer .radiobtn input {
+
+    margin: 0px 0px 0px 6px;
+}
+
+.formcontainer .radiobtn label {
+    margin: 0px 29px 0px 20px;
+}
+
+.formcontainer .form_div .form .radiobtn {
+    display: inline-flex;
+    margin: 15px 0px;
+    width: auto;
+    flex-wrap: wrap;
+}
+
+.bttn_div {
+    text-align: center;
+    margin-top: 45px;
+}
+
+#submit_bttn:hover {
+    background-color: whitesmoke;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    ;
+}
+
+#submit_bttn {
+    width: 155px;
+    height: 47px;
+    background-color: rgb(49, 48, 48);
+    border: 2px solid white;
+    border-radius: 7px;
+    color: white;
+    font-size: 30px;
+}
+
+
+/* section b */
+
+
+.container_sec_b {
+    /* height: 54.8vh; */
+    overflow: hidden;
+}
+
+.box_section_b {
+    background-color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.box_section_b .div_b {
+    display: flex;
+    background-color: #fbfafa;
+    /* border: 2px solid rgba(236, 232, 232, 0.82); */
+    box-shadow: 0px 0px 16px 9px rgba(236, 232, 232, 0.82);
+    padding: 10px 10px;
+    box-sizing: border-box;
+    height: 154px;
+    padding: 15px 15px;
+    flex-basis: 23%;
+    margin: 34px 12px;
+}
+
+.box_section_b .icon {
+    color: white;
+    display: inline;
+    font-size: 67px;
+    height: 71px;
+    width: 197px;
+    background-color: #3dcf3d;
+    margin: 5px 8px;
+
+}
+
+.div-1 .icon {
+    font-size: 55px;
+}
+
+.div-4 .icon {
+    font-size: 51px;
+    padding-top: 6px;
+    box-sizing: border-box;
+}
+
+/*.box_section_b .subheadings */
+.sub_heading2 {
+    font-size: 20px;
+    color: #3E3F40;
+    text-align: left;
+}
+
+/* box_section_b .para2 */
+.para2 {
+    color: #808080;
+    text-align: left;
+    font-size: 16px;
+    margin: 10px 0px 0px;
+}
+
+
+/* SECTION C */
+
+.container_sec_c {
+    height: 400px;
+    position: relative;
+    background-color: white;
+    border: 5px solid rgb(69, 196, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.inner_container {
+    height: 200px;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+
+}
+
+.section_c_box {
+    display: flex;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 15px 0px;
+    overflow: hidden;
+    width: 250%;
+    height: 400px;
+
+
+}
+
+.marquee {
+    position: absolute;
+    left: 0;
+    animation-name: Animi;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    width: 250%;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 220px;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+@keyframes Animi {
+    0% {
+
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+.box_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+.box_div .img_div {
+    border: 2px solid red;
+    box-shadow: 0px 0px 9px 8px rgba(179, 171, 171, 0.82);
+}
+
+.img_div img {
+
+    width: 250px;
+    height: 200px;
+}
+
+.img_div:hover {
+    border: 2px solid white;
+
+}
+
+/* section a----->meadia query */
+@media only screen and (min-width:770px) and (max-width:990px) {
+
+    /* text container */
+    .section-a::before {
+        content: "";
+        position: absolute;
+        background: url('https://bit.ly/3zOEh5j') no-repeat center center/cover;
+        top: 0;
+        left: 0;
+        height: 155vh;
+        width: 100%;
+        z-index: -2;
+        opacity: 0.9;
+    }
+
+    .section-a .container {
+        flex-direction: column;
+        padding: 70px 15px;
+        box-sizing: border-box;
+        height: auto;
+        width: auto;
+    }
+
+    .section-a .container .textcontainer {
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 35px 15px;
+        height: auto;
+    }
+
+    .section-a .container .textcontainer h1 {
+        font-size: 42px;
+    }
+
+    .section-a .container .textcontainer p {
+        font-size: 20px;
+        margin: 20px 0px 15px 0px;
+    }
+
+
+
+    .formcontainer {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+@media only screen and (max-width:770px) {
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+
+    }
+
+    /* text container */
+    .section-a::before {
+        content: "";
+        position: absolute;
+        background: url('https://bit.ly/3zOEh5j') no-repeat center center/cover;
+        top: 0;
+        left: 0;
+        height: 189vh;
+        width: 100%;
+        z-index: -2;
+        opacity: 0.9;
+    }
+
+
+    .section-a .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section-a .container .textcontainer {
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 35px 15px;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .section-a .container .textcontainer h1 {
+        font-size: 32px;
+    }
+
+    .section-a .container .textcontainer p {
+        font-size: 16px;
+        margin: 20px 0px 15px 0px;
+    }
+
+    /* form container */
+    .formcontainer {
+        width: 100vw;
+        height: auto;
+        box-sizing: border-box;
+        padding: 0px 20px;
+    }
+
+    .form_div .form .fromto {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    .fromto .from,
+    .fromto .to {
+        width: auto;
+    }
+
+    .form .deptreturn {
+
+        display: flex;
+        width: auto;
+        flex-direction: column;
+
+    }
+
+    .form .deptreturn .dept,
+    .form .deptreturn .return {
+        width: auto;
+    }
+
+    .form .cabin_adult {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .form .cabin_adult .cabin {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form .cabin_adult .adcabin {
+        width: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .formcontainer .form_div .form .radiobtn {
+        width: auto;
+    }
+
+    .form .radiobtn .round_trip,
+    .form .radiobtn .one_way,
+    .from .radiobtn .multicity {
+        box-sizing: border-box;
+        padding: 2px 5px;
+    }
+
+    .formcontainer .radiobtn label {
+        margin: 0px;
+    }
+
+    .formcontainer .radiobtn input {
+        margin: 0px;
+    }
+
+    .form input[type="text"],
+    .form select {
+        width: auto;
+    }
+
+}
+
+/* sectionb---->media query */
+@media only screen and (min-width:200px) and (max-width:800px) {
+    .box_section_b {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .box_section_b .div_b {
+        margin: 25px 3px;
+        flex-basis: 70%;
+    }
+}
